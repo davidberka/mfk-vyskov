@@ -1,0 +1,78 @@
+// colors
+$primary: #425AA0; 
+$secondary: #E3E4E8;
+$black: #0F122E;
+$white: #ffffff;
+
+$theme-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'black': $black,
+    'white': $white
+);
+
+// container max widths 
+$container-max-widths: (
+    sm: 600px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1224px,
+);
+
+// spacers
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: pxtorem(4px),
+    2: pxtorem(8px),
+    3: pxtorem(16px),
+    4: pxtorem(24px),
+    5: pxtorem(32px),
+    6: pxtorem(40px),
+    7: pxtorem(48px),
+    8: pxtorem(56px),
+    9: pxtorem(64px),
+    10: pxtorem(10px),
+    12: pxtorem(12px),
+    80: pxtorem(80px),
+    88: pxtorem(88px),
+    112: pxtorem(112px),
+);
+
+// border radiuses
+$border-radius-sm: pxtorem(4px);
+$border-radius: pxtorem(8px);
+
+// border widths
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  8: 8px,
+);
+
+// font sizes
+$font-sizes: ( 
+    1:  4rem,    // 64px
+    2:  3.5rem,      // 56px
+    3:  3rem,       // 48px
+    4:  2.5rem,     // 40px
+    5:  2.25rem,       // 36px
+    6:  1.5rem,     // 24px
+    7:  1.313rem,   // 21px
+    8:  1.25rem,    // 20px
+    9:  1.125rem,   // 18px
+    10:  1rem,      // base
+    11: .875rem,    // 14px
+    12: .75rem,     // 12px
+);
+
+// font family
+$font-family-primary: 'Cabin', sans-serif;
+
+$font-family-sans-serif: $font-family-primary;
+$font-weight-base: 400;
+$font-size-base: 1rem;

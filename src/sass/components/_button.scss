@@ -1,0 +1,50 @@
+.btn {
+    font-family: $font-family-primary;
+    transition: 0.15s all linear;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: pxtorem(12px);
+    font-weight: 700;
+    line-height: 1;
+    border-radius: pxtorem(4px);
+    padding: pxtorem(9px) pxtorem(12px);
+    min-width: pxtorem(72px);
+}
+
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+        border: 1px solid $value;
+        background-color: $value;
+        @if $color == 'white' {
+            color: $primary;
+        } @else {
+            color: #fff;
+        }
+        &:hover {
+            @include media-breakpoint-up(lg) {
+                @if $color == 'white' {
+                    background-color: transparent;
+                    color: #fff;
+                } @else {
+                    background-color: transparent;
+                    color: $value;
+                }
+            }
+        }
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .btn-outline-#{$color} {
+        border: 1px solid $value;
+        color: $value;
+        &:hover {
+            background-color: $value;
+            @if $color == 'white' {
+                color: $primary;
+            } @else {
+                color: #fff;
+            }
+        }
+    }
+}

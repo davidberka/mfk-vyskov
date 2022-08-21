@@ -1,0 +1,29 @@
+.partners {
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            object-fit: contain;
+        }
+    }
+}
+
+.footer-logo {
+    width: pxtorem(107px);
+    height: pxtorem(74px);
+
+    @include media-breakpoint-up(xxl) {
+        width: pxtorem(137px);
+        height: pxtorem(104px);
+    }
+}
+
+.footer-link {
+    font-size: pxtorem(12px);
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+}

@@ -1,0 +1,12 @@
+.page-item:not(:last-child) {
+    margin-right: .5rem;
+}
+
+.page-link {
+    border-radius: pxtorem(8px);
+
+    &:hover, &:focus {
+        text-decoration: underline;
+        background: unset;
+    }
+}

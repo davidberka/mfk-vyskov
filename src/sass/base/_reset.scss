@@ -1,0 +1,29 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // border: 1px solid red;
+}
+
+body {
+    width: 100%;
+    color: $black;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,7 @@
+.overflow-ellipsis {
+    -webkit-line-clamp: var(--text-lines);
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

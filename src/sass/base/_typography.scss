@@ -1,0 +1,48 @@
+.typography {
+    p {
+        line-height: 1.5;
+        font-size: 1rem;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    p, ul, ol, table, fieldset, blockquote, iframe, .embed-responsive {
+        margin-bottom: 1.5rem;
+    }
+
+    img, iframe {
+        max-width: 100%;
+    }
+
+    img[style*="float: left"] {
+        margin: 0 2rem 2rem 0;
+    }
+    
+    img[style*="float: right"] {
+        margin: 0 0 2rem 2rem;
+    }
+
+    iframe[src*="youtube.com/"] {
+        width: 100%; 
+        height: auto; 
+        aspect-ratio: 16/9;
+    }
+
+    // list
+    ul, ol {
+        margin-left: 0;
+        position: relative;
+        font-size: pxtorem(14px);
+        line-height: 1.57;
+    }
+    
+    li {
+        margin-bottom: .5rem;
+        &::marker {
+            color: $primary;
+        }
+    }
+    
+    ol li {
+        list-style: decimal;
+    }
+}

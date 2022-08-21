@@ -1,0 +1,101 @@
+header {
+    border-bottom: 2px solid $primary;
+}
+
+.header-second-row {
+    height: 4rem;
+}
+
+.header-logo {
+    transform: translateY(.25rem);
+    height: 5rem;
+    width: 5rem;
+    
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.burger-menu {
+    background: none;
+    border: none;
+    font-size: pxtorem(18px);
+    font-weight: 700;
+
+    svg {
+        position: absolute;
+        inset: 0;
+        transition: all .2s ease-in;
+        
+        &.burger-menu-close {
+            opacity: 0;
+            transform: scale(.75);
+        }
+    }
+
+    &.open {
+        svg {
+            
+            &.burger-menu-close {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            &.burger-menu-open {
+                opacity: 0;
+                transform: scale(.75);
+            }
+        }
+    }
+}
+
+.navbar {
+    position: absolute;   
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1rem);
+    transition: all .2s ease-in;
+
+    &.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    font-weight: 700;
+    color: inherit;
+    text-align: center;
+    
+    &:hover {
+        background: rgba($color: $primary, $alpha: .1);
+    }
+}
+
+.dropdown-menu {
+    position: static;
+    border: 0;
+    padding: 0;
+
+    &.open {
+        display: block;
+    }
+}
+
+.dropdown-item {
+    text-align: center;
+    padding: .5rem 1rem;
+    font-weight: 700;
+    border-bottom: 1px solid $secondary;
+}
