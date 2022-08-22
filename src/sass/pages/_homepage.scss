@@ -1,0 +1,15 @@
+.topstory-article-img {
+    height: pxtorem(220px);
+    width: 100%;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.matches-block-logo {
+    height: 4rem;
+    width: 4rem;
+}

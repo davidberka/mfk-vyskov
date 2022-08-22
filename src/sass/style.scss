@@ -4,6 +4,7 @@
 @import './utils/overflowEllipsis';
 @import './utils/widthMaxContent';
 @import './utils/resultTypes';
+@import './utils/objectFit';
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
@@ -18,3 +19,4 @@
 @import './layout/footer';
 @import './layout/aside';
 
+@import './pages/homepage';

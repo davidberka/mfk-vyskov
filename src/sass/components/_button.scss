@@ -1,14 +1,22 @@
 .btn {
     font-family: $font-family-primary;
     transition: 0.15s all linear;
-    text-transform: uppercase;
     cursor: pointer;
-    font-size: pxtorem(12px);
+    font-size: pxtorem(18px);
     font-weight: 700;
     line-height: 1;
-    border-radius: pxtorem(4px);
-    padding: pxtorem(9px) pxtorem(12px);
-    min-width: pxtorem(72px);
+    padding: pxtorem(8px) pxtorem(24px);
+    border-radius: 0;
+}
+
+.btn-link {
+    padding: .25rem 0;
+    font-size: pxtorem(14px);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 @each $color, $value in $theme-colors {

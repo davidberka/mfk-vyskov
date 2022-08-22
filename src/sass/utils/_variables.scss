@@ -35,6 +35,7 @@ $spacers: (
     9: pxtorem(64px),
     10: pxtorem(10px),
     12: pxtorem(12px),
+    20: pxtorem(20px),
     80: pxtorem(80px),
     88: pxtorem(88px),
     112: pxtorem(112px),
@@ -72,6 +73,7 @@ $font-sizes: (
 
 // font family
 $font-family-primary: 'Cabin', sans-serif;
+$font-family-secondary: 'Syne', sans-serif;
 
 $font-family-sans-serif: $font-family-primary;
 $font-weight-base: 400;

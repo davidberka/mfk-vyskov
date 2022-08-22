@@ -10,6 +10,7 @@ header {
     transform: translateY(.25rem);
     height: 5rem;
     width: 5rem;
+    z-index: 100;
     
     img {
         height: 100%;
@@ -52,11 +53,13 @@ header {
 
 .navbar {
     position: absolute;   
-    top: 100%;
+    top: calc(100% + 2px);
+    border-bottom: 2px solid $primary;
     left: 0;
     width: 100%;
     padding: 1rem;
     display: block;
+    background: $white;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-1rem);

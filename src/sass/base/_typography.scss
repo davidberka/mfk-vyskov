@@ -1,7 +1,47 @@
+h1 {
+    font-size: pxtorem(28px);
+}
+
+h2 {
+    font-size: pxtorem(40px);
+    font-family: $font-family-secondary;
+    line-height: 1.04;
+}
+
+h3 {
+    font-size: pxtorem(20px);
+}
+
+h4 {
+    font-size: pxtorem(20px);
+}
+
+p {
+    font-size: pxtorem(14px);
+    line-height: 1.6;
+}
+
+span {
+    font-size: pxtorem(14px);
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: pxtorem(48px) 
+    } 
+
+    h3 {
+        font-size: pxtorem(32px);
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
 .typography {
     p {
         line-height: 1.5;
-        font-size: 1rem;
     }
 
     h1, h2, h3, h4, h5, h6,
