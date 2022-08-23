@@ -1,0 +1,9 @@
+.bg-rainbow-gradient {
+    background: linear-gradient(268.11deg, #ECCE30 -20.11%, #D71921 25.66%, #425AA0 95.53%) !important;
+}
+
+.text-rainbow-gradient {
+    background: linear-gradient(268.11deg, #ECCE30 -20.11%, #D71921 25.66%, #425AA0 95.53%) !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}

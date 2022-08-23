@@ -12,4 +12,39 @@
 .matches-block-logo {
     height: 4rem;
     width: 4rem;
+
+    @include media-breakpoint-up(md) {
+        height: pxtorem(88px);
+        width: pxtorem(88px);
+    }
+}
+
+.more-articles-banner-1 {
+    height: pxtorem(88px);
+}
+
+.more-articles-image {
+    height: 220px;    
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 186px;
+        min-width: 288px;
+        max-width: 288px;
+    }
+}
+
+.team-link {
+    font-size: pxtorem(20px);
+    font-weight: 700;
+
+    &.active {
+        color: $primary;
+    }
 }

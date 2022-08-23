@@ -1,5 +1,12 @@
 header {
     border-bottom: 2px solid $primary;
+
+    @include media-breakpoint-down(md) {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: $zindex-fixed;
+    }
 }
 
 .header-second-row {

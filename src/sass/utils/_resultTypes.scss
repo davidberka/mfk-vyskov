@@ -1,6 +1,8 @@
 .result {
-    font-size: 2rem;
+    font-family: $font-family-secondary;
+    font-size: pxtorem(56px);
     font-weight: 700;
+    color: $primary;
 }
 
 .win {
