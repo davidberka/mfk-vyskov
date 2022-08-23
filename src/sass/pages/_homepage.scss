@@ -48,3 +48,18 @@
         color: $primary;
     }
 }
+
+.more-articles-title {
+    height: 48px;
+    --text-lines: 2;
+}
+
+.more-articles-text {
+    height: 45px;
+    --text-lines: 2;
+
+    @include media-breakpoint-up(md) {
+        height: 75px;
+        --text-lines: 3;
+    }
+}
