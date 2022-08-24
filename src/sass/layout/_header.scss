@@ -7,10 +7,20 @@ header {
         width: 100%;
         z-index: $zindex-fixed;
     }
+
+    @include media-breakpoint-up(lg) {
+        border-bottom: 4px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(268.11deg, #ECCE30 -20.11%, #D71921 25.66%, #425AA0 95.53%);
+    }
 }
 
 .header-second-row {
     height: 4rem;
+
+    @include media-breakpoint-up(lg) {
+        height: 3rem;
+    }
 }
 
 .header-logo {
@@ -23,6 +33,13 @@ header {
         height: 100%;
         width: 100%;
     }
+
+    @include media-breakpoint-up(lg) {
+        height: pxtorem(120px);
+        width: pxtorem(120px);
+        min-width: pxtorem(120px);
+        transform: translateY(-2.75rem);
+    }
 }
 
 .burger-menu {
@@ -30,6 +47,8 @@ header {
     border: none;
     font-size: pxtorem(18px);
     font-weight: 700;
+    display: flex;
+    align-items: center;
 
     svg {
         position: absolute;
@@ -56,6 +75,10 @@ header {
             }
         }
     }
+
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
 }
 
 .navbar {
@@ -77,29 +100,65 @@ header {
         visibility: visible;
         transform: translateY(0);
     }
+
+    @include media-breakpoint-up(lg) {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        background: unset;
+        padding: 0;
+        border-bottom: 0;
+
+        & > ul {
+            height: 100%;
+        }
+    }
 }
 
 .nav-item {
     position: relative;
+    
+    @include media-breakpoint-up(lg) {
+        &:hover {
+            .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
 }
 
 .nav-link {
     font-weight: 700;
     color: inherit;
     text-align: center;
-    
+
     &:hover {
         background: rgba($color: $primary, $alpha: .1);
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: .75rem 1rem;
     }
 }
 
 .dropdown-menu {
     position: static;
     border: 0;
+    border-radius: 0;
     padding: 0;
 
     &.open {
         display: block;
+    }
+
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease-in;
     }
 }
 
@@ -108,4 +167,9 @@ header {
     padding: .5rem 1rem;
     font-weight: 700;
     border-bottom: 1px solid $secondary;
+
+    @include media-breakpoint-up(lg) {
+        text-align: left;
+        padding: .25rem 1rem;
+    }
 }

@@ -1,4 +1,6 @@
 const menuHandler = () => {
+    if (window.innerWidth > 992) return;
+
     const navLinks = document.querySelectorAll('.nav-link');
     const dropdownMenus = document.querySelectorAll('.dropdown-menu');
     const burgerMenu = document.querySelector('.burger-menu');
