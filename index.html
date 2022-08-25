@@ -9,9 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 <link rel="stylesheet" type="text/css" href="./dist/css/style.css">
-
-<script defer src="./dist/js/main.js"></script>
 
 <title>MFK Vyškov</title>
 </head>
@@ -55,7 +55,7 @@
                     </svg>
                 </div>
             </button>
-            <nav class="navbar open">
+            <nav class="navbar">
                 <ul class="w-100 d-lg-flex align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Klub</a>
@@ -100,21 +100,46 @@
     <main>
         <section>
     <div>
-        <div class="carousel-topstory">
-            <div class="container">
+        <div class="topstory-carousel">
+            <div class="topstory-article container position-relative">
                 <div class="topstory-article-img mb-3">
                     <img src="./dist/images/content/article_1.png" alt="">
                 </div>
-                <div>
+                <div class="topstory-article-content px-md-6 py-md-5 pt-lg-72">
                     <h1 class="mb-2 fw-bold">Změny v kádru: Ze Slovácka přichází Kratochvíla, do Kroměříže míří Jambor</h1>
-                    <p class="mb-20">Vyškov hlásí před začátkem soutěže další posily. Útočnou fázi vyztuží David Kratochvíla, který přichází na hostování z prvoligového Slovácka. Naopak ven z kádru míří Dan Jambor, který by pravděpodobně nedostal v podzimní části potřebný prostor a své dovednosti bude moct ukázat na hostování v třetiligové Kroměříži.</p>
+                    <p class="mb-4 mb-lg-7">Vyškov hlásí před začátkem soutěže další posily. Útočnou fázi vyztuží David Kratochvíla, který přichází na hostování z prvoligového Slovácka. Naopak ven z kádru míří Dan Jambor, který by pravděpodobně nedostal v podzimní části potřebný prostor a své dovednosti bude moct ukázat na hostování v třetiligové Kroměříži.</p>
+                    <a href="article.html" class="btn btn-primary">Více</a>
+                </div>
+            </div>
+            <div class="topstory-article container position-relative">
+                <div class="topstory-article-img mb-3">
+                    <img src="./dist/images/content/article_1.png" alt="">
+                </div>
+                <div class="topstory-article-content px-md-6 py-md-5 pt-lg-72">
+                    <h1 class="mb-2 fw-bold">Změny v kádru: Ze Slovácka přichází Kratochvíla, do Kroměříže míří Jambor</h1>
+                    <p class="mb-4 mb-lg-7">Vyškov hlásí před začátkem soutěže další posily. Útočnou fázi vyztuží David Kratochvíla, který přichází na hostování z prvoligového Slovácka. Naopak ven z kádru míří Dan Jambor, který by pravděpodobně nedostal v podzimní části potřebný prostor a své dovednosti bude moct ukázat na hostování v třetiligové Kroměříži.</p>
+                    <a href="article.html" class="btn btn-primary">Více</a>
+                </div>
+            </div>
+            <div class="topstory-article container position-relative">
+                <div class="topstory-article-img mb-3">
+                    <img src="./dist/images/content/article_1.png" alt="">
+                </div>
+                <div class="topstory-article-content px-md-6 py-md-5 pt-lg-72">
+                    <h1 class="mb-2 fw-bold">Změny v kádru: Ze Slovácka přichází Kratochvíla, do Kroměříže míří Jambor</h1>
+                    <p class="mb-4 mb-lg-7">Vyškov hlásí před začátkem soutěže další posily. Útočnou fázi vyztuží David Kratochvíla, který přichází na hostování z prvoligového Slovácka. Naopak ven z kádru míří Dan Jambor, který by pravděpodobně nedostal v podzimní části potřebný prostor a své dovednosti bude moct ukázat na hostování v třetiligové Kroměříži.</p>
                     <a href="article.html" class="btn btn-primary">Více</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-    
+
+<!-- TODO: DELETE -->
+<ul class="slick-dots d-none">
+    <li class="slick-active"></li>
+</ul>
+<div class="topstory-carousel slick-dotted slick-slider d-none"></div>
 
         <section class="bg-secondary py-6">
     <div class="container">
@@ -470,5 +495,10 @@
         </div>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="./dist/js/main.js"></script>
+<script src="./dist/js/slick.js"></script>
 </body>
 </html>
