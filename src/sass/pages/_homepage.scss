@@ -38,7 +38,29 @@
 
 .topstory-article-content {
     position: relative;
-    z-index: 10;
+    z-index: 1;
+
+    h1 {
+        max-height: 101px;
+        --text-lines: 3;
+    }
+
+    p {
+        max-height: 68px;
+        --text-lines: 3;
+    }
+
+    @include media-breakpoint-up(md) {
+        h1 {
+            max-width: 20ch;
+            max-height: 173px;
+        }
+
+        p {
+            max-height: 76px;
+            max-width: 46ch;
+        }
+    }
 }
 
 .matches-block-logo {
@@ -82,18 +104,18 @@
 }
 
 .more-articles-title {
-    height: 48px;
+    max-height: 48px;
     --text-lines: 2;
     max-width: 39ch;
 }
 
 .more-articles-text {
-    height: 45px;
+    max-height: 45px;
     max-width: 46ch;
     --text-lines: 2;
 
     @include media-breakpoint-up(md) {
-        height: 75px;
+        max-height: 75px;
         --text-lines: 3;
     }
 }

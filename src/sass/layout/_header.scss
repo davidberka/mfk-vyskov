@@ -1,4 +1,6 @@
 header {
+    position: relative;
+    z-index: 10;
     border-bottom: 2px solid $primary;
 
     @include media-breakpoint-down(md) {

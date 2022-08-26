@@ -4,6 +4,10 @@ $(document).ready(function () {
         slidesToShow: 1,
         arrows: false,
         variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        speed: 800,
+        infinite: true,
         responsive: [
             {
                 breakpoint: 768,
