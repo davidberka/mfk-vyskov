@@ -26,4 +26,12 @@ $(document).ready(function () {
             },
         ],
     });
+
+    $('.social-media-carousel').slick({
+        infinite: true,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        speed: 800,
+    });
 });

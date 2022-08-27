@@ -42,6 +42,16 @@ $spacers: (
     112: pxtorem(112px),
 );
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  3xl: 1720px
+);
+
 // border radiuses
 $border-radius-sm: pxtorem(4px);
 $border-radius: pxtorem(8px);
