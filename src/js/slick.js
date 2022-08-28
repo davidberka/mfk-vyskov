@@ -8,12 +8,16 @@ $(document).ready(function () {
         autoplaySpeed: 6000,
         speed: 800,
         infinite: true,
+        arrows: true,
+        prevArrow: $('.slick-prev'),
+        nextArrow: $('.slick-next'),
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
                     centerMode: true,
                     dots: true,
+                    arrows: false,
                 },
             },
             {
@@ -22,6 +26,7 @@ $(document).ready(function () {
                     centerMode: false,
                     variableWidth: false,
                     dots: true,
+                    arrows: false,
                 },
             },
         ],
