@@ -1,0 +1,36 @@
+.filter-type-link {
+    font-size: pxtorem(14px);
+    font-weight: 700;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    
+    &.active {
+        color: $primary;
+    }
+}
+
+.roster-item {
+    max-width: 288px;
+}
+
+.roster-item-photo {
+    border-bottom: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(268.11deg, #ECCE30 -20.11%, #D71921 25.66%, #425AA0 95.53%);
+    height: 288px;
+    width: 100%;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.roster-item-number {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+}

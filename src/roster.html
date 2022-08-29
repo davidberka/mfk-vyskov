@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    @@include('./components/head.html')
+</head>
+<body>
+    @@include('./components/header.html')
+
+    <main class="container pt-7 pb-80">
+        <div class="mb-5 d-flex flex-wrap gap-6 align-items-center justify-content-between">
+            <h1 class="fw-bold">Soupiska A-tým</h1>
+            <select class="js-select form-select w-auto mw-100" name="season" id="season">
+                <option value="2023">2022/23</option>
+                <option value="2022">2021/22</option>
+            </select>
+        </div>
+        <div class="pb-12 ps-md-5 mb-4 d-flex flex-wrap gap-6 justify-content-between border-bottom border-2 border-secondary">
+            <ul class="d-flex flex-wrap gap-6">
+                <li data-id="all" class="position-link filter-type-link active"><a href="#">Všichni</a></li>
+                <li data-id="goalkeepers" class="position-link filter-type-link"><a href="#">Brankáři</a></li>
+                <li data-id="defenders" class="position-link filter-type-link"><a href="#">Obránci</a></li>
+                <li data-id="midfielders" class="position-link filter-type-link"><a href="#">Záložníci</a></li>
+                <li data-id="forwards" class="position-link filter-type-link"><a href="#">Útočníci</a></li>
+            </ul>
+            <ul class="d-flex flex-wrap gap-6">
+                <li data-id="1" class="roster-type-link filter-type-link active"><a href="#">Fotosoupiska</a></li>
+                <li data-id="2" class="roster-type-link filter-type-link"><a href="#">Soupiska</a></li>
+            </ul>
+        </div>
+
+        <div id="1" class="roster-tab">
+            <div id="goalkeepers" class="roster-position mb-4 pb-8 border-bottom border-2 border-secondary">
+               <h4 class="fw-bold mb-3">Brankáři</h4> 
+               <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4">
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+
+            <div id="defenders" class="roster-position mb-4 pb-8 border-bottom border-2 border-secondary">
+               <h4 class="fw-bold mb-3">Obránci</h4> 
+               <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4">
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+
+            <div id="midfielders" class="roster-position mb-4 pb-8 border-bottom border-2 border-secondary">
+               <h4 class="fw-bold mb-3">Záložníci</h4> 
+               <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4">
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+
+            <div id="forwards" class="roster-position mb-4 pb-8 border-bottom border-2 border-secondary">
+               <h4 class="fw-bold mb-3">Útočníci</h4> 
+               <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4">
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="roster-item position-relative mx-auto mx-xxl-0">
+                            <div class="roster-item-photo">
+                                <h2 class="roster-item-number text-rainbow-gradient w-maxContent">28</h2>
+                                <img src="./dist/images/content/player.png" alt="">
+                            </div>
+                            <div class="pt-12 text-center">
+                                <h5 class="fs-9 mb-0">Dan</h5>
+                                <h4 class="fw-bold">Jambor</h4>
+                            </div>
+                            <a href="player.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+
+        <div id="2" class="roster-tab typography">
+            <div id="goalkeepers" class="roster-position mb-4 pb-8 border-bottom border-2 border-secondary">
+                <h4 class="fw-bold mb-3">Brankáři</h4> 
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>#</th>
+                                <th>Jméno hráče</th>
+                                <th>Narozen</th>
+                                <th>Výška</th>
+                                <th>Váha</th>
+                                <th>Věk</th>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="defenders" class="roster-position mb-4 pb-8 border-bottom border-2 border-secondary">
+                <h4 class="fw-bold mb-3">Obránci</h4> 
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>#</th>
+                                <th>Jméno hráče</th>
+                                <th>Narozen</th>
+                                <th>Výška</th>
+                                <th>Váha</th>
+                                <th>Věk</th>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="midfielders" class="roster-position mb-4 pb-8 border-bottom border-2 border-secondary">
+                <h4 class="fw-bold mb-3">Záložníci</h4> 
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>#</th>
+                                <th>Jméno hráče</th>
+                                <th>Narozen</th>
+                                <th>Výška</th>
+                                <th>Váha</th>
+                                <th>Věk</th>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="forwards" class="roster-position mb-4 pb-8 border-bottom border-2 border-secondary">
+                <h4 class="fw-bold mb-3">Útočníci</h4> 
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>#</th>
+                                <th>Jméno hráče</th>
+                                <th>Narozen</th>
+                                <th>Výška</th>
+                                <th>Váha</th>
+                                <th>Věk</th>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                            <tr>
+                                <td class="fw-bold text-rainbow-gradient">24</td>
+                                <td class="fw-bold text-primary">Dan Jambor</td>
+                                <td>17. 10. 1994</td>
+                                <td>193 cm</td>
+                                <td>81 kg</td>
+                                <td>27 let</td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include('./components/footer.html')
+</body>
+</html>

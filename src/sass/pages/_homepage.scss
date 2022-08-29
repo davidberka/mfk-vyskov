@@ -131,9 +131,13 @@
     }
 }
 
-.team-item {
+.team-link {
     font-size: pxtorem(20px);
     font-weight: 700;
+
+    &:hover {
+        text-decoration: underline;
+    }
 
     &.active {
         color: $primary;

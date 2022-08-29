@@ -6,7 +6,7 @@
     font-weight: 700;
     line-height: 1;
     padding: pxtorem(8px) pxtorem(24px);
-    border-radius: 0;
+    border-radius: $border-radius-sm;
 }
 
 .btn-link {
