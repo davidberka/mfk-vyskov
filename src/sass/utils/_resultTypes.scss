@@ -3,6 +3,13 @@
     font-size: 3rem;
     font-weight: 700;
     color: $primary;
+
+    &:hover {
+        a {
+            text-decoration: underline;
+            color: inherit;
+        }
+    }
 }
 
 .win {
