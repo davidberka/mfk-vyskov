@@ -104,6 +104,10 @@
 
 .more-articles-banner-1 {
     height: pxtorem(88px);
+
+    @include media-breakpoint-up(xl) {
+        height: pxtorem(160px);
+    }
 }
 
 .more-articles-article {

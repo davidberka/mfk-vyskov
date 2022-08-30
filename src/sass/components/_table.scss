@@ -1,28 +1,23 @@
 .typography table {
-    & > :not(:first-child) {
-        border-top: none;
-    }
+    tr {
+        &:first-child {
+            td, th {
+                border-bottom: 2px solid $primary;
+            }
 
-    tr:first-child {
-        position: relative;
+        }
 
-        & > :first-child {
-            &::before {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                height: 2px;
-                width: 100%;
-                background: linear-gradient(268.11deg, #ECCE30 -20.11%, #D71921 25.66%, #425AA0 95.53%) !important;
+        &:last-child {
+            td, th {
+                border: none;
             }
         }
 
-    }
-    
-    tr {
         th, td {
             text-align: center;
+            white-space: nowrap;
+            font-size: pxtorem(14px);
+            padding: .75rem 1rem;
         }
 
         th {
