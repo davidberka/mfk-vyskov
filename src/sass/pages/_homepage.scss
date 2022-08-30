@@ -116,6 +116,13 @@
             text-decoration: underline;
         }
     }
+
+    @include media-breakpoint-up(md) {
+        &.type-2 {
+            max-width: 288px;
+            margin: 0 auto;
+        }
+    }
 }
 
 .more-articles-image {
@@ -132,6 +139,10 @@
         height: 186px;
         min-width: 288px;
         max-width: 288px;
+
+        &.type-2 {
+            min-width: unset;
+        }
     }
 }
 

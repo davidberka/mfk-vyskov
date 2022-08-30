@@ -6,7 +6,6 @@ $(document).ready(function () {
         variableWidth: true,
         autoplay: true,
         autoplaySpeed: 6000,
-        speed: 800,
         infinite: true,
         arrows: true,
         prevArrow: $('.slick-prev'),

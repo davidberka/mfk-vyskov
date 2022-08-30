@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    @@include('./components/head.html')
+</head>
+<body>
+    @@include('./components/header.html')
+
+    <main class="container pt-7 pb-80">
+        <div class="mb-5 d-flex flex-wrap gap-6 align-items-center justify-content-between">
+            <h1 class="fw-bold">Zápasy A-tým</h1>
+            <select class="js-select form-select w-auto mw-100" name="season" id="season">
+                <option value="2023">2022/23</option>
+                <option value="2022">2021/22</option>
+            </select>
+        </div>
+        <div class="pb-12 ps-md-5 mb-4 border-bottom border-2 border-secondary">
+            <ul class="d-flex flex-wrap gap-6">
+                <li class="position-link filter-type-link active"><a href="#">Všechny</a></li>
+                <li class="position-link filter-type-link"><a href="#">Domácí</a></li>
+                <li class="position-link filter-type-link"><a href="#">Venkovní</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div>
+                <div class="mb-4 pb-8 border-bottom border-2 border-secondary">
+                    <h4 class="fw-bold mb-3">Nejbližší zápas</h4>
+        
+                    <div>
+                        <div class="row">
+                            <div>
+            
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div></div>
+        </div>
+    </main>
+
+    @@include('./components/footer.html')
+</body>
+</html>

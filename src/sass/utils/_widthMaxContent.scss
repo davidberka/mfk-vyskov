@@ -1,3 +1,9 @@
 .w-maxContent {
     width: max-content !important;
 }
+
+@media (min-width: 768px) {
+    .w-md-90 {
+        width: 90% !important;
+    }
+}
