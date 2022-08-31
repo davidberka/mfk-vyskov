@@ -2,7 +2,6 @@
     font-family: $font-family-secondary;
     font-size: 3rem;
     font-weight: 700;
-    color: $primary;
 
     &:hover {
         a {
@@ -13,9 +12,9 @@
 }
 
 .win {
-    color: #4fc93a;
+    color: #4BB569;
 }
 
 .lose {
-    color: #eb1a13;
+    color: #D72C40;
 }

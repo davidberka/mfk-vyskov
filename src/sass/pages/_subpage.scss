@@ -74,3 +74,12 @@
         border-image-source: linear-gradient(268.11deg, #ECCE30 -20.11%, #D71921 25.66%, #425AA0 95.53%);
     }
 }
+
+.match-item-btn {
+    height: 40px;
+    width: 40px;
+    background: rgba($color: $primary, $alpha: .08);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
