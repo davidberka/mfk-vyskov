@@ -44,7 +44,7 @@ const tabsHandler = (filterLink, filterTab) => {
     const links = document.querySelectorAll(filterLink);
     const tabs = document.querySelectorAll(filterTab);
 
-    if (!tabs || !links) return;
+    if (!tabs.length || !links.length) return;
 
     tabs[0].style.display = 'block';
 
@@ -76,7 +76,7 @@ const rosterTabsHandler = (filterLink, filterTab) => {
     const links = document.querySelectorAll(filterLink);
     const tabs = document.querySelectorAll(filterTab);
 
-    if (!tabs || !links) return;
+    if (!tabs.length || !links.length) return;
 
     const allPositionsLink = document.querySelector(`${filterLink}[data-id='all']`);
     allPositionsLink.classList.add('active');
