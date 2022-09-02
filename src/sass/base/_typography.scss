@@ -39,7 +39,7 @@ span {
 .typography {
     h1, h2, h3, h4, h5, h6,
     p, ul, ol, table, fieldset, blockquote, iframe, .embed-responsive {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     img, iframe {
@@ -77,5 +77,20 @@ span {
     
     ol li {
         list-style: decimal;
+    }
+}
+
+.quotation {
+    position: relative;
+    padding-left: pxtorem(36px);
+    margin-bottom: 2rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 4px;
+        background: linear-gradient(to top, #ECCE30 -20.11%, #D71921 25.66%, #425AA0 95.53%);
     }
 }

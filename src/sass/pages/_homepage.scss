@@ -163,6 +163,11 @@
     max-height: 48px;
     --text-lines: 2;
     max-width: 39ch;
+
+    &.type-2 {
+        max-height: 75px;
+        --text-lines: 3;
+    }
 }
 
 .more-articles-text {
