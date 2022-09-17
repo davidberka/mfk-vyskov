@@ -71,6 +71,7 @@ const tabsHandler = (filterLink, filterTab) => {
 };
 
 tabsHandler('.roster-type-link', '.roster-tab');
+tabsHandler('.team-link', '.team-tab');
 
 const rosterTabsHandler = (filterLink, filterTab) => {
     const links = document.querySelectorAll(filterLink);
