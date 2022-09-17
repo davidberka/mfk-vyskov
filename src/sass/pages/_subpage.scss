@@ -121,6 +121,11 @@
     border-radius: 50%;
     display: grid;
     place-items: center;
+    transition: all .2s ease-in;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .player-photo {
