@@ -39,11 +39,23 @@ $(document).ready(function () {
             }
         });
 
+    $('.matches-carousel').slick({
+        infinite: false,
+        autoplay: false,
+        speed: 800,
+        arrows: false,
+        swipeToSlide: true,
+        slidesToShow: 1,
+        initialSlide: 1,
+    });
+
     $('.social-media-carousel').slick({
         infinite: true,
         variableWidth: true,
         autoplay: true,
         autoplaySpeed: 6000,
         speed: 800,
+        arrows: false,
+        swipeToSlide: true,
     });
 });
