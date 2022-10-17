@@ -46,7 +46,7 @@ $(document).ready(function () {
         arrows: false,
         swipeToSlide: true,
         slidesToShow: 1,
-        initialSlide: 1,
+        initialSlide: $('.matches-carousel > div').length > 1 ? 1 : 0,
     });
 
     $('.social-media-carousel').slick({
